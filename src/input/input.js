@@ -117,6 +117,8 @@ export function disableBrowserMagic(field, spellcheck, autocorrect, autocapitali
   field.setAttribute("autocorrect", autocorrect ? "" : "off")
   field.setAttribute("autocapitalize", autocapitalize ? "" : "off")
   field.setAttribute("spellcheck", !!spellcheck)
+  field.setAttribute("data-nusa-custom-control-type", "VincariCodeMirror")
+  field.setAttribute("data-nuance_sod_api", "")
 }
 
 export function hiddenTextarea() {
